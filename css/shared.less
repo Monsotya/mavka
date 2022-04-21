@@ -1,0 +1,122 @@
+@accent_color: #ABF4C3;
+@light_color: #FFF8E7;
+@dark_color: #382E1E;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+div{
+ -webkit-box-sizing: border-box; 
+ -moz-box-sizing: border-box;    
+ box-sizing: border-box;      
+}
+body{
+    margin: 0;
+    width: 100%;
+    background-color: @dark_color;
+    color: @light_color;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title{
+    color: @accent_color;
+    font-size: 48px;    
+}
+.text{
+    color: @light_color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.small-title{
+    color: @accent_color;
+    font-size: 24px;
+}
+.big-title{
+    text-align: center;
+    color: @light_color;
+    font-size: 48px;
+}
+.header{
+        .logo{
+            display: inline-block;
+            filter: invert(91%) sepia(20%) saturate(574%) hue-rotate(73deg) brightness(99%) contrast(94%);
+            img{
+                height: 80px;
+                width: 80px;
+            }
+            font-size: 24px;
+            text-align: center;
+            color: black;
+            font-weight: 300;
+
+        }
+        .head{
+            text-align: right;
+            display: inline-block;
+            width: 80%;
+            float: right;
+            .address{
+                color: @light_color;
+                font-weight: 300;
+                font-family: 'Roboto', sans-serif;
+                font-size: 24px;
+                padding-top: 2%;
+                
+
+            }
+            .menu{
+                margin-top: 2%;
+                color: @accent_color;
+                font-size: 32px;
+                a{
+                    color: @accent_color;
+                    text-decoration: none;
+                    padding-left: 2%;
+                }
+            }
+        }
+}
+footer{
+    padding: 7%;
+    margin-top: 7%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    border-top: 1.5px solid @light_color;
+    .text{
+        font-weight: 300;
+    }
+    .contacts{
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        margin-right: 13%;
+    }
+}
+@media(max-width: 1250px){
+    .header{
+        .head{
+            .address{
+                font-size: 18px;
+            }
+            .menu{
+                font-size:24px;
+                a{
+                    padding: 0%;}
+            }
+        }
+    }
+    .text{
+        font-size: 18px;
+    }
+    .small-title{
+        font-size: 18px;
+    }
+    .big-title{
+        font-size: 32px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    footer{
+        .contacts{
+        margin-right: 10%;
+    }
+    }
+    
+}
