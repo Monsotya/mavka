@@ -7,14 +7,18 @@
 #submenu{
     padding: 7%;
     padding-top: 0%;
+    display: flex;
+    justify-content: space-between;
     #categories{
-        width: 94%;
+        width: 90%;
         padding-top: 1%;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         a{
+            padding-right: 2%;
             font-size: 32px;
             font-weight: 300;
-            padding-right: 5%;
         }
     }
     #cart{
@@ -46,39 +50,47 @@
             height: 60px;
         }
     }
+    .burger-menu{
+        display: none;
+    }
 }
 #dishes{
     padding: 7%;
     padding-top: 0%;
     padding-bottom: 1%;
-    table{
+    .table-dishes{
         border: 0px;
-        tr{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 0px;
+        .dish{                 
             display: flex;
-            flex-direction: row;
-            border: 0px;
-            td{ 
-                
+            flex-direction: column;
+            justify-content: space-between;
+            height: 550px;
+            width: 24%;
+            margin-bottom: 3%;
+            border: 2px solid @light_color;
+            .item{
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 550px;
-                width: 295px;
-                margin-bottom: 3%;
-                margin-left: 0;
-                margin-right: 3%;
-                .name{
-                    padding: 5%;
-                    font-size: 32px;
-                    padding-bottom: 0%;
+            }
+            .name{
+                vertical-align: top;
+                padding: 5%;
+                font-size: 32px;
+                padding-bottom: 0%;
+            }
+            img{
+                margin: 0;
+                object-fit:cover;
+                width: 100%;
+                height: 265px;
                 }
-                img{
-                    object-fit:cover;
-                    width: 295px;
-                    height: 265px;
-                    }
-                border: 2px solid @light_color;
-                .info{
+            .info{
                     padding: 5%;
                     display: flex;                     
                     align-items: baseline;
@@ -89,29 +101,26 @@
                       flex: 1;                          
                       border-bottom: 2px dotted @light_color;                
                     }
-                }
-                .info > * {
+                }                
+            .info > * {
                   padding: 0;
                   margin: 0;
                     
                 }
-                button{
-                    width: 90%;
-                    margin: 5%;
-                    vertical-align: bottom;
-                    font-size: 24px;
-                    background: @accent_color;
-                    color: @dark_color;
-                    border-radius: 25px;
-                    align-content: center;
-                    padding: 4%;
-                    font-family: 'Josefin Sans', sans-serif;
-                    font-weight: 700;
-                    border: 0px;
-                }
+            button{
+                width: 90%;
+                margin: 5%;
+                vertical-align: bottom;
+                font-size: 24px;
+                background: @accent_color;
+                color: @dark_color;
+                border-radius: 25px;
+                align-content: center;       padding: 4%;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 700;
+                border: 0px;
             }
-            
-        }
+        }     
     }
 }
 .pagination {
@@ -119,25 +128,181 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    a {
+      color: @light_color;
+      font-size: 24px;
+      padding: 16px 32px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid @light_color;
+    }
 }
 
-.pagination a {
-  color: @light_color;
-    font-size: 24px;
-  padding: 16px 32px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid @light_color;
-}
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
+
 .text{
     text-align: center;
     margin-bottom: 2%;
 }
 .pagination a:hover:not(.active) {background-color: @light_color;
 color: @dark_color;}
+@media(max-width: 1200px){
+    #dishes{
+        .table-dishes{
+            .dish{ 
+                height: 450px;
+                border: 1px solid @light_color;
+                img{
+                    height: 200px;
+                }
+                .name{
+                    font-size: 28px;
+                }
+                .info{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1100px){
+    #submenu{
+        #categories{
+            a{
+                font-size: 20px;
+            }
+        }
+        #cart{
+                font-size: 10px;
+            img{
+                width: 50px;
+                height: 40px;
+            }
+            }
+            
+        }
+    
+}
+@media(max-width: 900px){
+    #dishes{
+        .table-dishes{
+            .dish{ 
+                height: 350px;
+                border: 1px solid @light_color;
+                img{
+                    height: 150px;
+                }
+                .name{
+                    font-size: 20px;
+                }
+                button{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 700px){
+    .header{
+        .head{
+            .menu{
+                font-size: 14px;
+            }
+            .sddress{
+                font-size: 12px;
+            }
+        }
+    }
+    #dishes{
+        .table-dishes{
+            .dish{ 
+                height: 250px;
+                border: 1px solid @light_color;
+                img{
+                    height: 100px;
+                }
+                .name{
+                    font-size: 16px;
+                }
+                button{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+}
+@media(max-width: 470px){
+    .header{
+        display: none;
+    }
+    #submenu{
+        padding-top: 5%;
+        #categories{
+            width: 60%;
+            
+            a{
+                font-size: 14px;
+            }
+            
+        }
+        #cart{
+            width: 10%;
+            p{
+                line-height: 15px;
+                border: 1px solid @accent_color;
+                width: 15px;
+                height: 15px;
+                font-size: 10px;
+            }
+            img{
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .burger-menu{
+            width: 9%;
+            display: flex;
+                filter: invert(91%) sepia(20%) saturate(574%) hue-rotate(73deg) brightness(99%) contrast(94%);
+                img{
+                    height: 40px;
+                    width: 30px;                    
+                }
+            }
+    }
+    #dishes{
+        .table-dishes{
+            .dish{  
+                flex-direction: row;
+                width: 100%;
+                height: 120px;
+                .item{
+                    padding: 3%;
+                    width: 100%;
+                    .name{
+                        font-size: 14px;
+                    }
+                    .info{
+                        font-size: 12px;
+                        margin: 0;
+                    }
+                    button{
+                        font-size: 12px;
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+                img{
+                    width: 120px;
+                    height: 117px;
+                }
+            }
+        }
+    }
+    .pagination {
+        a{
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
+}

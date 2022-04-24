@@ -135,7 +135,7 @@ body {
 .header .head {
   text-align: right;
   display: inline-block;
-  width: 80%;
+  width: 85%;
   float: right;
 }
 .header .head .address {
@@ -149,11 +149,12 @@ body {
   margin-top: 2%;
   color: #ABF4C3;
   font-size: 32px;
+  display: flex;
+  justify-content: space-between;
 }
 .header .head .menu a {
   color: #ABF4C3;
   text-decoration: none;
-  padding-left: 2%;
 }
 footer {
   padding: 7%;
@@ -161,25 +162,27 @@ footer {
   padding-bottom: 4%;
   padding-top: 4%;
   border-top: 1.5px solid #FFF8E7;
+  display: flex;
+  justify-content: space-between;
 }
 footer .text {
   font-weight: 300;
+  text-align: left;
 }
 footer .contacts {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
-  margin-right: 13%;
+  width: 19%;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .header .head .address {
     font-size: 18px;
   }
   .header .head .menu {
     font-size: 24px;
   }
-  .header .head .menu a {
-    padding: 0%;
+  .title {
+    font-size: 36px;
   }
   .text {
     font-size: 18px;
@@ -188,13 +191,101 @@ footer .contacts {
     font-size: 18px;
   }
   .big-title {
-    font-size: 32px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 1250px) {
+  footer .contacts {
+    margin-right: 12%;
+  }
+}
+@media (max-width: 1000px) {
+  .header .logo {
+    font-size: 18px;
+  }
+  .header .logo img {
+    height: 60px;
+    width: 60px;
+  }
+  .header .head .address {
+    font-size: 16px;
+  }
+  .header .head .menu {
+    font-size: 20px;
   }
   .title {
-    font-size: 32px;
+    font-size: 30px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .small-title {
+    font-size: 14px;
+  }
+  .big-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .header .logo {
+    font-size: 14px;
+  }
+  .header .logo img {
+    height: 50px;
+    width: 50px;
+  }
+  .header .head .address {
+    font-size: 12px;
+  }
+  .header .head .menu {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .small-title {
+    font-size: 12px;
+  }
+  .big-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 535px) {
+  #main .header {
+    display: none;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .small-title {
+    font-size: 14px;
+  }
+  .big-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  footer .text {
+    font-size: 8px;
+    font-weight: 300;
+  }
+  footer .small-title {
+    font-size: 10px;
   }
   footer .contacts {
-    margin-right: 10%;
+    width: 24%;
+    margin-right: 8%;
   }
 }
 .header {
@@ -205,16 +296,20 @@ footer .contacts {
 #submenu {
   padding: 7%;
   padding-top: 0%;
+  display: flex;
+  justify-content: space-between;
 }
 #submenu #categories {
-  width: 94%;
+  width: 90%;
   padding-top: 1%;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #submenu #categories a {
+  padding-right: 2%;
   font-size: 32px;
   font-weight: 300;
-  padding-right: 5%;
 }
 #submenu #cart {
   position: relative;
@@ -245,41 +340,48 @@ footer .contacts {
   width: 70px;
   height: 60px;
 }
+#submenu .burger-menu {
+  display: none;
+}
 #dishes {
   padding: 7%;
   padding-top: 0%;
   padding-bottom: 1%;
 }
-#dishes table {
-  border: 0px;
-}
-#dishes table tr {
+#dishes .table-dishes {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border: 0px;
 }
-#dishes table tr td {
+#dishes .table-dishes .dish {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 550px;
-  width: 295px;
+  width: 24%;
   margin-bottom: 3%;
-  margin-left: 0;
-  margin-right: 3%;
   border: 2px solid #FFF8E7;
 }
-#dishes table tr td .name {
+#dishes .table-dishes .dish .item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dishes .table-dishes .dish .name {
+  vertical-align: top;
   padding: 5%;
   font-size: 32px;
   padding-bottom: 0%;
 }
-#dishes table tr td img {
+#dishes .table-dishes .dish img {
+  margin: 0;
   object-fit: cover;
-  width: 295px;
+  width: 100%;
   height: 265px;
 }
-#dishes table tr td .info {
+#dishes .table-dishes .dish .info {
   padding: 5%;
   display: flex;
   align-items: baseline;
@@ -287,15 +389,15 @@ footer .contacts {
   font-weight: 300;
   font-size: 24px;
 }
-#dishes table tr td .info span {
+#dishes .table-dishes .dish .info span {
   flex: 1;
   border-bottom: 2px dotted #FFF8E7;
 }
-#dishes table tr td .info > * {
+#dishes .table-dishes .dish .info > * {
   padding: 0;
   margin: 0;
 }
-#dishes table tr td button {
+#dishes .table-dishes .dish button {
   width: 90%;
   margin: 5%;
   vertical-align: bottom;
@@ -314,7 +416,7 @@ footer .contacts {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .pagination a {
   color: #FFF8E7;
@@ -324,11 +426,6 @@ footer .contacts {
   transition: background-color 0.3s;
   border: 1px solid #FFF8E7;
 }
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
 .text {
   text-align: center;
   margin-bottom: 2%;
@@ -336,4 +433,133 @@ footer .contacts {
 .pagination a:hover:not(.active) {
   background-color: #FFF8E7;
   color: #382E1E;
+}
+@media (max-width: 1200px) {
+  #dishes .table-dishes .dish {
+    height: 450px;
+    border: 1px solid #FFF8E7;
+  }
+  #dishes .table-dishes .dish img {
+    height: 200px;
+  }
+  #dishes .table-dishes .dish .name {
+    font-size: 28px;
+  }
+  #dishes .table-dishes .dish .info {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  #submenu #categories a {
+    font-size: 20px;
+  }
+  #submenu #cart {
+    font-size: 10px;
+  }
+  #submenu #cart img {
+    width: 50px;
+    height: 40px;
+  }
+}
+@media (max-width: 900px) {
+  #dishes .table-dishes .dish {
+    height: 350px;
+    border: 1px solid #FFF8E7;
+  }
+  #dishes .table-dishes .dish img {
+    height: 150px;
+  }
+  #dishes .table-dishes .dish .name {
+    font-size: 20px;
+  }
+  #dishes .table-dishes .dish button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .header .head .menu {
+    font-size: 14px;
+  }
+  .header .head .sddress {
+    font-size: 12px;
+  }
+  #dishes .table-dishes .dish {
+    height: 250px;
+    border: 1px solid #FFF8E7;
+  }
+  #dishes .table-dishes .dish img {
+    height: 100px;
+  }
+  #dishes .table-dishes .dish .name {
+    font-size: 16px;
+  }
+  #dishes .table-dishes .dish button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 470px) {
+  .header {
+    display: none;
+  }
+  #submenu {
+    padding-top: 5%;
+  }
+  #submenu #categories {
+    width: 60%;
+  }
+  #submenu #categories a {
+    font-size: 14px;
+  }
+  #submenu #cart {
+    width: 10%;
+  }
+  #submenu #cart p {
+    line-height: 15px;
+    border: 1px solid #ABF4C3;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+  #submenu #cart img {
+    height: 40px;
+    width: 40px;
+  }
+  #submenu .burger-menu {
+    width: 9%;
+    display: flex;
+    filter: invert(91%) sepia(20%) saturate(574%) hue-rotate(73deg) brightness(99%) contrast(94%);
+  }
+  #submenu .burger-menu img {
+    height: 40px;
+    width: 30px;
+  }
+  #dishes .table-dishes .dish {
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+  }
+  #dishes .table-dishes .dish .item {
+    padding: 3%;
+    width: 100%;
+  }
+  #dishes .table-dishes .dish .item .name {
+    font-size: 14px;
+  }
+  #dishes .table-dishes .dish .item .info {
+    font-size: 12px;
+    margin: 0;
+  }
+  #dishes .table-dishes .dish .item button {
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+  }
+  #dishes .table-dishes .dish img {
+    width: 120px;
+    height: 117px;
+  }
+  .pagination a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
