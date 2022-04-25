@@ -426,6 +426,10 @@ footer .contacts {
   #strengthes .strengthes-block .strength {
     font-size: 24px;
   }
+  #strengthes .strengthes-block .strength img {
+    height: 115px;
+    width: 115px;
+  }
   #main #cuisine .button {
     font-size: 24px;
   }
@@ -441,17 +445,22 @@ footer .contacts {
     font-size: 18px;
   }
   #strengthes .strengthes-block .strength img {
-    height: 130px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
   }
   #main #cuisine .button {
     font-size: 18px;
   }
 }
-@media (max-width: 800px) {
-  #strengthes .strengthes-block .strength img {
-    height: 100px;
-    width: 100px;
+@media (max-width: 700px) {
+  #dishes .dishes-block .name {
+    font-size: 18px;
+  }
+  #dishes .dishes-block img {
+    height: 130px;
+  }
+  #main #cuisine .button {
+    font-size: 14px;
   }
 }
 @media (max-width: 535px) {

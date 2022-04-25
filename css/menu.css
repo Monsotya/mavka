@@ -301,7 +301,7 @@ footer .contacts {
 }
 #submenu #categories {
   width: 90%;
-  padding-top: 1%;
+  padding-top: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -335,10 +335,10 @@ footer .contacts {
 #submenu #cart img {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 10%;
   filter: invert(91%) sepia(20%) saturate(574%) hue-rotate(73deg) brightness(99%) contrast(94%);
-  width: 70px;
-  height: 60px;
+  width: 100%;
+  height: 65px;
 }
 #submenu .burger-menu {
   display: none;
@@ -390,8 +390,11 @@ footer .contacts {
   font-size: 24px;
 }
 #dishes .table-dishes .dish .info span {
+  background-image: linear-gradient(to right, #FFF8E7 20%, #382e1e 0%);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  background-position: bottom;
   flex: 1;
-  border-bottom: 2px dotted #FFF8E7;
 }
 #dishes .table-dishes .dish .info > * {
   padding: 0;
@@ -434,6 +437,18 @@ footer .contacts {
   background-color: #FFF8E7;
   color: #382E1E;
 }
+@media (max-width: 1300px) {
+  #submenu #cart img {
+    height: 50px;
+  }
+  #submenu #cart p {
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    border: 2px solid #ABF4C3;
+  }
+}
 @media (max-width: 1200px) {
   #dishes .table-dishes .dish {
     height: 450px;
@@ -457,8 +472,20 @@ footer .contacts {
     font-size: 10px;
   }
   #submenu #cart img {
-    width: 50px;
-    height: 40px;
+    height: 45px;
+  }
+  #submenu #cart p {
+    line-height: 15px;
+    border: 2px solid #ABF4C3;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+  #dishes .table-dishes .dish .name {
+    font-size: 24px;
+  }
+  #dishes .table-dishes .dish button {
+    font-size: 18px;
   }
 }
 @media (max-width: 900px) {
@@ -472,15 +499,27 @@ footer .contacts {
   #dishes .table-dishes .dish .name {
     font-size: 20px;
   }
-  #dishes .table-dishes .dish button {
-    font-size: 20px;
+}
+@media (max-width: 800px) {
+  #submenu #cart img {
+    height: 30px;
+  }
+  #submenu #cart p {
+    line-height: 12px;
+    border: 1px solid #ABF4C3;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
   }
 }
 @media (max-width: 700px) {
+  #submenu #categories a {
+    font-size: 16px;
+  }
   .header .head .menu {
     font-size: 14px;
   }
-  .header .head .sddress {
+  .header .head .address {
     font-size: 12px;
   }
   #dishes .table-dishes .dish {
@@ -489,6 +528,51 @@ footer .contacts {
   }
   #dishes .table-dishes .dish img {
     height: 100px;
+  }
+  #dishes .table-dishes .dish .name {
+    font-size: 16px;
+  }
+  #dishes .table-dishes .dish button {
+    font-size: 16px;
+  }
+  .pagination a {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 600px) {
+  #submenu #categories a {
+    font-size: 12px;
+  }
+  #submenu #cart {
+    font-size: 10px;
+  }
+  #submenu #cart img {
+    height: 25px;
+  }
+  #submenu #cart p {
+    line-height: 12px;
+    border: 1px solid #ABF4C3;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+  }
+  .header .head .menu {
+    font-size: 14px;
+  }
+  .header .head .address {
+    font-size: 12px;
+  }
+  #dishes .table-dishes .dish {
+    width: 48%;
+    height: 300px;
+    border: 1px solid #FFF8E7;
+  }
+  #dishes .table-dishes .dish img {
+    height: 150px;
+  }
+  #dishes .table-dishes .dish .info {
+    margin: 0;
   }
   #dishes .table-dishes .dish .name {
     font-size: 16px;
@@ -521,8 +605,7 @@ footer .contacts {
     font-size: 10px;
   }
   #submenu #cart img {
-    height: 40px;
-    width: 40px;
+    height: 35px;
   }
   #submenu .burger-menu {
     width: 9%;
@@ -539,7 +622,7 @@ footer .contacts {
     height: 120px;
   }
   #dishes .table-dishes .dish .item {
-    padding: 3%;
+    padding: 2%;
     width: 100%;
   }
   #dishes .table-dishes .dish .item .name {
@@ -549,9 +632,13 @@ footer .contacts {
     font-size: 12px;
     margin: 0;
   }
+  #dishes .table-dishes .dish .item .info span {
+    background-size: 10px 1px;
+  }
   #dishes .table-dishes .dish .item button {
     font-size: 12px;
     margin: 0;
+    padding: 3%;
     width: 100%;
   }
   #dishes .table-dishes .dish img {
@@ -561,5 +648,23 @@ footer .contacts {
   .pagination a {
     font-size: 14px;
     padding: 8px 16px;
+  }
+}
+@media (max-width: 350px) {
+  #submenu {
+    padding-top: 5%;
+  }
+  #submenu #categories {
+    width: 60%;
+  }
+  #submenu #categories a {
+    font-size: 12px;
+  }
+  #submenu #cart {
+    margin-top: 2%;
+    width: 13%;
+  }
+  #submenu #cart img {
+    height: 30px;
   }
 }

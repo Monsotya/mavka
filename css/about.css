@@ -311,6 +311,9 @@ footer .contacts {
 #main .map .big-title {
   color: #ABF4C3;
 }
+#main .map .burger-menu {
+  display: none;
+}
 #main .map iframe {
   padding: 6%;
   padding-top: 8%;
@@ -374,12 +377,25 @@ footer .contacts {
     height: 300px;
   }
 }
-@media (max-width: 900px) {
-  #gallery .photos .photo {
-    margin-bottom: 2%;
+@media (max-width: 1000px) {
+  #main .map iframe {
+    height: 300px;
   }
+}
+@media (max-width: 900px) {
   #gallery .photos .photo img {
     height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  #main .map {
+    width: 70%;
+  }
+  #history .big-title {
+    font-size: 22px;
+  }
+  #history #history-text .text {
+    font-size: 12px;
   }
 }
 @media (max-width: 700px) {
@@ -393,16 +409,16 @@ footer .contacts {
     height: 250px;
   }
   #history .big-title {
-    font-size: 20px;
-  }
-  #history #history-text {
-    padding: 0;
+    font-size: 18px;
   }
   #history #history-text .text {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 535px) {
+  .big-title {
+    font-size: 18px;
+  }
   #main {
     padding: 0;
     background: none;
@@ -411,15 +427,33 @@ footer .contacts {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7%;
+    margin-top: 0%;
     background: #382E1E;
     text-align: center;
     color: #ABF4C3;
     font-size: 48px;
     padding-top: 4%;
   }
+  #main .map div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main .map .burger-menu {
+    width: 12%;
+    display: flex;
+    justify-content: flex-start;
+    filter: invert(91%) sepia(20%) saturate(574%) hue-rotate(73deg) brightness(99%) contrast(94%);
+  }
+  #main .map .burger-menu img {
+    height: 40px;
+    width: 30px;
+  }
   #main .map .big-title {
+    padding-top: 3%;
     color: #ABF4C3;
+    width: 75%;
+    text-align: center;
+    justify-content: center;
   }
   #main .map iframe {
     padding: 0%;
@@ -438,7 +472,7 @@ footer .contacts {
     padding: 8%;
   }
   #history .big-title {
-    padding-bottom: 4%;
+    padding-bottom: 5%;
     text-align: center;
     color: #ABF4C3;
   }
@@ -449,11 +483,15 @@ footer .contacts {
     width: 100%;
   }
   #history #history-text .text {
-    padding: 7%;
+    padding: 12%;
     padding-left: 10%;
     padding-right: 10%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../images/nature.jpg) no-repeat;
+    background: linear-gradient(rgba(56, 46, 30, 0.6), rgba(56, 46, 30, 0.6)), url(../images/nature.jpg) no-repeat;
     background-size: cover;
+    font-size: 14px;
+  }
+  #gallery .big-title {
+    color: #ABF4C3;
   }
   #gallery .photos .photo {
     margin-bottom: 2%;
