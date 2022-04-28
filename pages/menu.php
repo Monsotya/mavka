@@ -6,26 +6,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Mavka</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/shared.css">
-        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="../css/shared.css">
+        <link rel="stylesheet" href="../css/menu.css">
         
     </head>
     <body>           
            <div class="header">
               <div class="logo">
-               <img src="images/girl.png">
+               <img src="../images/girl.png">
                <div>MAVKA</div>
                
                </div>
                <div class="head">
                    <div class="address">Kyiv, Naberechhne highway, Dnipro station, +380442048098</div>
                    <div class="menu">
-                       <a>Main</a>
+                       <a href="../index.php?name=mavka&theme=restaurant">Main</a>
                        <a>Menu</a>
-                       <a>Order table</a>
+                       <a href="order.php?name=mavka&theme=restaurant">Order table</a>
                        <a>Delivery</a>
                        <a>Special occasions</a>                
-                       <a href="about.html">About us</a>
+                       <a href="about.php?name=mavka&theme=restaurant">About us</a>
                    </div>
                </div>               
            </div>
@@ -42,7 +42,7 @@
             </div>
             <div id="cart">
                 
-                <img src="images/shopping-cart.png">
+                <img src="../images/shopping-cart.png">
                 <p class="text">0</p>
             </div>
             <div class="burger-menu">
@@ -53,7 +53,7 @@
         <div id="dishes">
             <div class="table-dishes">
                 <div class="dish">
-                    <div><img src="images/chicken.jpg"></div>
+                    <div><img src="../images/chicken.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Kyiv chicken</div>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/deruny.jpg"></div>
+                    <div><img src="../images/deruny.jpg"></div>
                     <div class="item">
                         <div>                       
                             <div class="name">Potato pancakes with bacon and mashrooms</div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/dumplings.jpg"></div>
+                    <div><img src="../images/dumplings.jpg"></div>
                     <div class="item">      
                         <div>               
                             <div class="name">Dumplings with rabbit</div>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/dumplings-shrimp.webp"></div>
+                    <div><img src="../images/dumplings-shrimp.webp"></div>
                     <div class="item">
                         <div>
                             <div class="name">Dumplings with shrimps</div>
@@ -107,7 +107,7 @@
                     </div>  
                 </div>
                 <div class="dish">
-                    <div><img src="images/black-varenyky.jpg"></div>
+                    <div><img src="../images/black-varenyky.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Black varenyky with duck</div>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/cabbage.jpg"></div>
+                    <div><img src="../images/cabbage.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Stuffed cabbage-rolls with truffel and mushrooms</div>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/pepper.jpg"></div>
+                    <div><img src="../images/pepper.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Stuffed pepper with beef</div>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/soup1.jpg"></div>
+                    <div><img src="../images/soup1.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Truffel soup with duck</div>
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/borsch.jpg"></div>
+                    <div><img src="../images/borsch.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Borsch with lamb and pampushky</div>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/bouillon.jpg"></div>
+                    <div><img src="../images/bouillon.jpg"></div>
                     <div class="item">
                        <div>
                             <div class="name">Bouillon with rooster</div>
@@ -185,7 +185,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/chokolate-varenyky.jpg"></div>
+                    <div><img src="../images/chokolate-varenyky.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Chocolate varenyky with cherry</div>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/shuba.jpeg"></div>
+                    <div><img src="../images/shuba.jpeg"></div>
                     <div class="item">
                        <div>
                             <div class="name">Shuba herring</div>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/ceasar.jpg"></div>
+                    <div><img src="../images/ceasar.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Ukrainian Caesar</div>
@@ -224,7 +224,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/pancakes-salmon.jpg"></div>
+                    <div><img src="../images/pancakes-salmon.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Pancakes with salmon and shpynat</div>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/pancakes-mak.webp"></div>
+                    <div><img src="../images/pancakes-mak.webp"></div>
                     <div class="item">
                         <div>
                             <div class="name">Pancakes with poppy seeds and honey</div>
@@ -250,7 +250,7 @@
                     </div>
                 </div>
                 <div class="dish">
-                    <div><img src="images/mashroom-soup.jpg"></div>
+                    <div><img src="../images/mashroom-soup.jpg"></div>
                     <div class="item">
                         <div>
                             <div class="name">Mashroom soup</div>

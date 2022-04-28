@@ -23,11 +23,11 @@
                    <div class="address">Kyiv, Naberechhne highway, Dnipro station, +380442048098</div>
                    <div class="menu">
                        <a>Main</a>
-                       <a href="menu.html">Menu</a>
-                       <a>Order table</a>
+                       <a href="pages/menu.php?name=mavka&theme=restaurant">Menu</a>
+                       <a href="pages/order.php?name=mavka&theme=restaurant">Order table</a>
                        <a>Delivery</a>
                        <a>Special occasions</a>             
-                       <a href="about.html">About us</a>
+                       <a href="pages/about.php?name=mavka&theme=restaurant">About us</a>
                    </div>
                </div>               
            </div>
