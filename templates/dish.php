@@ -5,14 +5,6 @@ class Dish {
     private $price;
     private $image;
     
-    function __constract($name, $weight, $price, $image){
-        $this->name = $name;
-        $this->weight = $weight;
-        $this->price = $price;
-        $this->image = $image;
-
-    }
-    
     function set_name($name) {
         $this->name = $name;
     }
