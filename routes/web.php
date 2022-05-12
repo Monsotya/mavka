@@ -19,5 +19,5 @@ Route::get('/about', [MavkaController::class, 'about']);
 
 Route::get('/menu', [MavkaController::class, 'menu']);
 
-Route::get('/order', [MavkaController::class, 'order']);
+Route::post('/order', [MavkaController::class, 'order']);
 
