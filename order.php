@@ -7,7 +7,7 @@
         $error = 'All fields are required!';
     }
     else{
-        header('Location: ../index.php');
+        header('Location: index.php');
     }
 } ?>
 <html>
@@ -17,28 +17,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mavka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/shared.css">
-    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/order.css">
     
 </head>
 <body>           
-    <div class="header">
-        <div class="logo">
-            <img src="../images/girl.png">
-            <div>MAVKA</div>   
-        </div>
-        <div class="head">
-            <div class="address">Kyiv, Naberechhne highway, Dnipro station, +380442048098</div>
-            <div class="menu">
-                <a href="../index.php?name=mavka&theme=restaurant">Main</a>
-                <a>Menu</a>
-                <a>Order table</a>
-                <a>Delivery</a>
-                <a>Special occasions</a>                
-                <a href="about.php?name=mavka&theme=restaurant">About us</a>
-           </div>
-        </div>               
-    </div>
+    <?php include('templates/header.php'); ?>
     <form class="for" action="order.php" method="post">
         <div class="title">Order information</div><br /><br />
         <div class="form-fields">
@@ -62,20 +46,5 @@
             <?php } ?>
     </form>
 </body>
-<footer>
-    <div class="contacts">
-        <div class="small-title">Location</div>
-        <div class="text">Kyiv, Naberechhne highway, Dnipro station</div>
-    </div>
-    <div class="contacts">
-        <div class="small-title">Contacts</div>
-        <div class="text">+380442048098
-        mavka@gmail.com</div>
-    </div>
-    <div class="contacts">
-        <div class="small-title">About us</div>
-        <div class="text">@mavkainsta
-    mavkafacebook</div>
-    </div>
-</footer>
+<?php include('templates/footer.php'); ?>
 </html>
