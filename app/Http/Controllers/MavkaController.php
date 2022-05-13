@@ -34,4 +34,22 @@ class MavkaController extends Controller
     public function order(){
         return view('pages.order');
     }
+    
+    public function order_form(Request $request){
+        if(isset($request['name'], $request['people'], $request['date'], $request['phone'])){
+            $name = $request['name'];
+            $people = $request['people'];
+            $date = $request['date'];
+            $phone = $request['phone'];
+            if(empty($name) or empty($people) or empty($date) or empty($phone)){
+                $error = 'All fields are required!';
+                return view('pages.order')->with('error', $error);
+            }
+            else{
+                return view('pages.index');
+            }
+        
+        }
+        return view('pages.order');
+    }
 }

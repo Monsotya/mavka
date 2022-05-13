@@ -19,11 +19,11 @@
                <div class="address">Kyiv, Naberechhne highway, Dnipro station, +380442048098</div>
                <div class="menu">
                    <a href="/">Main</a>
-                   <a href="menu">Menu</a>
-                   <a href="order">Order table</a>
+                   <a href="{{ url('menu') }}">Menu</a>
+                   <a href="{{ url('order') }}">Order table</a>
                    <a>Delivery</a>
                    <a>Special occasions</a>                
-                   <a href="about">About us</a>
+                   <a href="{{ url('about/something') }}">About us</a>
                </div>
            </div>               
        </div> 

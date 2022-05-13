@@ -15,9 +15,11 @@ use App\Http\Controllers\MavkaController;
 
 Route::get('/',   [MavkaController::class, 'index']); 
 
-Route::get('/about', [MavkaController::class, 'about']);
+Route::get('/about/{info}', [MavkaController::class, 'about']);
 
 Route::get('/menu', [MavkaController::class, 'menu']);
 
-Route::post('/order', [MavkaController::class, 'order']);
+Route::post('/order_form', [MavkaController::class, 'order_form']);
+
+Route::get('/order', [MavkaController::class, 'order']);
 

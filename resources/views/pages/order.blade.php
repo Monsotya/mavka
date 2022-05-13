@@ -1,24 +1,12 @@
 @extends('layout.app')
 
-<?php if(isset($_POST['name'], $_POST['people'], $_POST['date'], $_POST['phone'])){
-    $name = $_POST['name'];
-    $people = $_POST['people'];
-    $date = $_POST['date'];
-    $phone = $_POST['phone'];
-    if(empty($name) or empty($people) or empty($date) or empty($phone)){
-        $error = 'All fields are required!';
-    }
-    else{
-        header('Location: index.php');
-    }
-} ?>
-
 @section('css-block')
 <link rel="stylesheet" href="{{ asset('css/order.css') }}">
 @endsection
 
 @section('body')
-<form class="for" action="order.php" method="post">
+<form class="for" action="{{ url('order_form') }}" method="post">
+    @csrf
     <div class="title">Order information</div><br /><br />
     <div class="form-fields">
         <div class="fields">
@@ -36,8 +24,8 @@
     </div>
     </div>
     <input type="submit" value="Order" class="button"><br />
-    <?php if(isset($error)){ ?>
-            <br /><div class="small-title"><?php echo $error ?></div><br />
-        <?php } ?>
+    @if(isset($error))
+            <br /><div class="small-title">{{ $error }} </div><br />
+    @endif
 </form>
 @endsection
