@@ -15,10 +15,23 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        color: @light_color;
         a{
+                    color: @light_color;
+
+            text-decoration: none;
             padding-right: 2%;
             font-size: 32px;
             font-weight: 300;
+        }
+        a:active{
+            text-decoration: none;
+        }
+        a:visited{
+            text-decoration: none;
+        }
+        a:-webkit-any-link {
+            text-decoration: none;
         }
     }
     #cart{
@@ -62,15 +75,17 @@
         border: 0px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content:flex-start;
         border: 0px;
+        align-items: flex-start;
         .dish{                 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 550px;
-            width: 24%;
+            width: 22%;
             margin-bottom: 3%;
+            margin-right: 3%;
             border: 2px solid @light_color;
             .item{
                 height: 100%;

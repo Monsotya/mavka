@@ -8,18 +8,18 @@
 
 <div id="submenu">
     <div id="categories">
-        <a>Salads</a>
-        <a>Breakfast</a>
-        <a>Soups</a>
-        <a>Lunch</a>
-        <a>Meat dishes</a>
-        
-        <a>Alcohol</a>
-        <a>Snacks</a>
+        <a href="{{ url('menu/all') }}">All</a>
+        <a href="{{ url('menu/salads') }}">Salads</a>
+        <a href="{{ url('menu/desserts') }}">Desserts</a>
+        <a href="{{ url('menu/soups') }}">Soups</a>
+        <a href="{{ url('menu/lunch') }}">Lunch</a>
+        <a href="{{ url('menu/meat+dishes') }}">Meat dishes</a>        
+        <a href="{{ url('menu/drinks') }}">Alcohol</a>
+        <a href="{{ url('menu/snacks') }}">Snacks</a>
     </div>
     <div id="cart">
         
-        <img src="images/shopping-cart.png">
+        <img src={{ URL('images/shopping-cart.png') }}>
         <p class="text">0</p>
     </div>
     <div class="burger-menu">
@@ -32,16 +32,16 @@
         @if(count($list) > 0)
             @foreach ($list as $item)
             <div class="dish">
-            <div><img src="{{ $item->get_image() }}" ></div>
+            <div><img src={{ URL("images/" . $item->image) }}></div>
             <div class="item">
                 <div>
-                    <div class="name">{{ $item->get_name() }}</div>
+                    <div class="name">{{ $item->name }}</div>
                     <div class="info">
-                        <div class="weight">{{ $item->get_weight() }}</div>       <span><p></p></span>
-                        <div class="price">{{ $item->get_price() }}</div>
+                        <div class="weight">{{ $item->weight }} g</div>       <span><p></p></span>
+                        <div class="price">{{ $item->price }} grn</div>
                     </div>
                 </div>                              
-                <button>ORDER</button>
+                <a href="{{ URL("item/" . $item->id) }}"><button>ORDER</button></a>
             </div>
             </div>
             @endforeach

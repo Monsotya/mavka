@@ -19,7 +19,7 @@
                <div class="address">Kyiv, Naberechhne highway, Dnipro station, +380442048098</div>
                <div class="menu">
                    <a href="/">Main</a>
-                   <a href="{{ url('menu') }}">Menu</a>
+                   <a href="{{ url('menu/all') }}">Menu</a>
                    <a href="{{ url('order') }}">Order table</a>
                    <a>Delivery</a>
                    <a>Special occasions</a>                

@@ -17,7 +17,9 @@ Route::get('/',   [MavkaController::class, 'index']);
 
 Route::get('/about/{info}', [MavkaController::class, 'about']);
 
-Route::get('/menu', [MavkaController::class, 'menu']);
+Route::get('/menu/{parameter}', [MavkaController::class, 'menu']);
+
+Route::get('/item/{id}', [MavkaController::class, 'item']);
 
 Route::post('/order_form', [MavkaController::class, 'order_form']);
 
