@@ -1,0 +1,231 @@
+@accent_color: #ABF4C3;
+@light_color: #FFF8E7;
+@dark_color: #382E1E;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+div{
+ -webkit-box-sizing: border-box; 
+ -moz-box-sizing: border-box;    
+ box-sizing: border-box;      
+}
+body{
+    margin: 0;
+    width: 100%;
+    background-color: @dark_color;
+    color: @light_color;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2.2em;
+}
+.title{
+    color: @accent_color;
+    font-size: 48px;    
+}
+.text{
+    color: @light_color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.small-title{
+    color: @accent_color;
+    font-size: 24px;
+}
+.big-title{
+    text-align: center;
+    color: @light_color;
+    font-size: 48px;
+}
+.header{
+        .logo{
+            display: inline-block;
+            filter: invert(91%) sepia(20%) saturate(574%) hue-rotate(73deg) brightness(99%) contrast(94%);
+            img{
+                height: 80px;
+                width: 80px;
+            }
+            font-size: 24px;
+            text-align: center;
+            color: black;
+            font-weight: 300;
+
+        }
+        .head{
+            text-align: right;
+            display: inline-block;
+            width: 85%;
+            float: right;
+            .address{
+                color: @light_color;
+                font-weight: 300;
+                font-family: 'Roboto', sans-serif;
+                font-size: 24px;
+                padding-top: 2%;
+                
+
+            }
+            .menu{
+                margin-top: 2%;
+                color: @accent_color;
+                font-size: 32px;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    color: @accent_color;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+}
+footer{
+    padding: 7%;
+    margin-top: 7%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    border-top: 1.5px solid @light_color;
+    display: flex;
+    justify-content: space-between;
+    .text{
+        font-weight: 300;
+        text-align: left;
+    }
+    .contacts{
+        display: inline-block;
+        vertical-align: top;
+        width: 19%;
+    }
+}
+
+@media(max-width: 1300px){
+    .header{
+        .head{
+            .address{
+                font-size: 18px;
+            }
+            .menu{
+                font-size: 24px;
+            }
+        }
+    }
+    .title{
+        font-size: 36px;    
+    }
+    .text{
+        font-size: 18px;
+    }
+    .small-title{
+        font-size: 18px;
+    }
+    .big-title{
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 1250px){
+    footer{
+        .contacts{
+            margin-right: 12%;
+            
+        }
+    }
+}
+@media(max-width: 1000px){
+    .header{
+        .logo{
+            font-size: 18px;
+            img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+        .head{
+            .address{
+                font-size: 16px;
+            }
+            .menu{
+                font-size: 20px;
+            }
+        }
+    }
+    .title{
+        font-size: 30px;    
+    }
+    .text{
+        font-size: 14px;
+    }
+    .small-title{
+        font-size: 14px;
+    }
+    .big-title{
+        font-size: 30px;
+    }
+}
+@media(max-width: 800px){
+    .text{
+        font-size: 14px;
+    }
+}
+@media(max-width: 700px){
+    .header{
+        .logo{
+            font-size: 14px;
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+        .head{
+            .address{
+                font-size: 12px;
+            }
+            .menu{
+                font-size: 16px;
+            }
+        }
+    }
+    .title{
+        font-size: 24px;    
+    }
+    .text{
+        font-size: 12px;
+    }
+    .small-title{
+        font-size: 12px;
+    }
+    .big-title{
+        font-size: 24px;
+    }
+}
+@media(max-width: 535px){
+    #main{
+        .header{
+            display: none;
+        }
+    }
+    
+    .title{
+        font-size: 20px;    
+    }
+    .text{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .small-title{
+        font-size: 14px;
+    }
+    .big-title{
+        margin: 0;
+        font-size: 20px;
+    }
+    footer{
+        .text{
+            font-size: 8px;
+            font-weight: 300;
+        }
+        .small-title{
+            font-size: 10px;
+        }
+        .contacts{
+            width: 24%;
+            margin-right: 8%;
+        }
+    }
+}

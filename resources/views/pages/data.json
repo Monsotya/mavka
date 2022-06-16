@@ -1,0 +1,98 @@
+[
+    {
+        "name" : "Kyiv chicken",
+        "weight" : "120g",
+        "price" : "150grn",
+        "image" : "images/chicken.jpg"
+    },
+    {
+        "name" : "Potato pancakes with bacon and mashrooms",
+        "weight" : "190g",
+        "price" : "190grn",
+        "image" : "images/deruny.jpg"
+    },
+    {
+        "name" : "Dumplings with rabbit",
+        "weight" : "230g",
+        "price" : "175grn",
+        "image" : "images/dumplings.jpg"
+    },
+    {
+        "name" : "Dumplings with shrimps",
+        "weight" : "250g",
+        "price" : "190grn",
+        "image" : "images/dumplings-shrimp.webp"
+    },
+    {
+        "name" : "Black varenyky with duck",
+        "weight" : "170g",
+        "price" : "150grn",
+        "image" : "images/black-varenyky.jpg"
+    },
+    {
+        "name" : "Stuffed cabbage-rolls with truffel and mushrooms",
+        "weight" : "270g",
+        "price" : "125grn",
+        "image" : "images/cabbage.jpg"
+    },
+    {
+        "name" : "Stuffed pepper with beef",
+        "weight" : "120g",
+        "price" : "130grn",
+        "image" : "images/pepper.jpg"
+    },
+    {
+        "name" : "Truffel soup with duck",
+        "weight" : "100g",
+        "price" : "150grn",
+        "image" : "images/soup1.jpg"
+    },
+    {
+        "name" : "Borsch with lamb and pampushky",
+        "weight" : "330g",
+        "price" : "170grn",
+        "image" : "images/borsch.jpg"
+    },
+    {
+        "name" : "Bouillon with rooster",
+        "weight" : "300g",
+        "price" : "140grn",
+        "image" : "images/bouillon.jpg"
+    },
+    {
+        "name" : "Chocolate varenyky with cherry",
+        "weight" : "200g",
+        "price" : "125grn",
+        "image" : "images/chokolate-varenyky.jpg"
+    },
+    {
+        "name" : "Shuba herring",
+        "weight" : "220g",
+        "price" : "100grn",
+        "image" : "images/shuba.jpeg"
+    },
+    {
+        "name" : "Ukrainian Caesar",
+        "weight" : "200g",
+        "price" : "150grn",
+        "image" : "images/ceasar.jpg"
+    },
+    {
+        "name" : "Pancakes with salmon and shpynat",
+        "weight" : "250g",
+        "price" : "200grn",
+        "image" : "images/pancakes-salmon.jpg"
+    },
+    {
+        "name" : "Pancakes with poppy seeds and honey",
+        "weight" : "240g",
+        "price" : "145grn",
+        "image" : "images/pancakes-mak.webp"
+    },
+    {
+        "name" : "Mashroom soup",
+        "weight" : "300g",
+        "price" : "160grn",
+        "image" : "images/mashroom-soup.jpg"
+    }
+]

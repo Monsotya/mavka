@@ -1,0 +1,279 @@
+@import "shared.less";
+.header{
+    padding: 7%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.dish{      
+    line-height: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    .item{
+        padding: 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        form{
+            input{
+                width: 100%;
+            }
+            input[type="number"]{
+                border-radius: 15px;
+                width: 50%;
+                padding: 0;
+                padding-left: 1%;
+                font-size: 18px;
+            }
+            input[type="submit"]{
+                margin-bottom: 5%;
+                vertical-align: bottom;
+                font-size: 24px;
+                background: @accent_color;
+                color: @dark_color;
+                border-radius: 25px;
+                align-content: center;       padding: 4%;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 700;
+                border: 0px;
+            }
+        }
+        .ingrediends, .tag{
+            font-size: 20px;
+            a {
+                color: @light_color;
+            }
+        }
+        .tag{
+            padding-top: 5%;
+        }
+        .ingrediends{
+            padding-bottom: 5%;
+        }
+    }
+    .name{
+        vertical-align: top;
+        font-size: 32px;
+        padding-bottom: 0%;
+    }
+    img{
+        margin: 0;
+        object-fit:cover;
+        width: 500px;
+        height: 350px;
+        }
+    .info{       
+        display: flex;                     
+        align-items: baseline;
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 24px;
+        span {
+            
+            background-image: linear-gradient(to right, @light_color 20%, rgba(@dark_color) 0%);
+            background-size: 10px 2px;
+            background-repeat: repeat-x;
+            background-position: bottom;
+            flex: 1;    
+        }
+    }                
+            .info > * {
+                  padding: 0;
+                  margin: 0;
+                    
+                }
+        }     
+@media(max-width: 1200px){
+    .dish{ 
+        height: 450px;
+        img{
+            height: 200px;
+        }
+        .name{
+            font-size: 28px;
+        }
+        .info{
+            font-size: 14px;
+        }
+    }
+}
+@media(max-width: 1100px){
+            .dish{ 
+                .name{
+                    font-size: 24px;
+                }
+                button{
+                    font-size:18px;
+                }
+            }
+    
+}
+@media(max-width: 900px){
+            .dish{ 
+                height: 350px;
+                border: 1px solid @light_color;
+                img{
+                    height: 150px;
+                }
+                .name{
+                    font-size: 20px;
+                }
+            }
+}
+@media(max-width: 700px){
+    
+    .header{
+        .head{
+            .menu{
+                font-size: 14px;
+            }
+            .address{
+                font-size: 12px;
+            }
+        }
+    }
+            .dish{ 
+                height: 250px;
+                border: 1px solid @light_color;
+                img{
+                    height: 100px;
+                }
+                .name{
+                    font-size: 16px;
+                }
+                button{
+                    font-size: 16px;
+                }
+            }
+    
+}
+@media(max-width: 600px){
+    
+    .header{
+        .head{
+            .menu{
+                font-size: 14px;
+            }
+            .address{
+                font-size: 12px;
+            }
+        }
+    }
+            .dish{ 
+                width: 48%;
+                height: 300px;
+                border: 1px solid @light_color;
+                img{
+                    height: 150px;
+                }
+                .info{
+                    margin: 0;
+                }
+                .name{
+                    font-size: 16px;
+                }
+                button{
+                    font-size: 16px;
+                }
+            }
+    
+}
+@media(max-width: 470px){
+    .header{
+        display: none;
+    }
+    .dish .item form input[type="number"] {
+        font-size: 12px;
+    }
+    .dish .item form input[type="submit"] {
+        font-size: 12px;
+        padding: 2%;
+    }
+            .dish{
+                margin: 7%;
+                flex-direction: row;
+                width: 86%;
+                height: 220px;
+                font-size: 14px;
+                .item{
+                    padding: 2%;
+                    width: 186%;
+                    .tag, .ingrediends{
+                        font-size: 12px;
+                    }
+                    .info{
+                        font-size: 12px;
+                        margin: 0;
+                        span{
+                            background-size: 10px 1px;
+                        }
+                    }
+                    form{input{
+                        font-size: 12px;
+                        }}
+                    button{
+                        font-size: 12px;
+                        margin: 0;
+                        padding: 3%;
+                        width: 100%;
+                    }
+                }
+                img{
+                    width: 120px;
+                    height: 217px;
+                }
+            }
+}
+
+@media(max-width: 470px){
+    .header{
+        display: none;
+    }
+    .dish .item form input[type="number"] {
+        font-size: 10px;
+    }
+    .dish .item form input[type="submit"] {
+        font-size: 10px;
+        padding: 2%;
+    }
+            .dish{
+                margin: 7%;
+                flex-direction: row;
+                width: 86%;
+                height: 220px;
+                font-size: 12px;
+                .item{
+                    padding: 2%;
+                    width: 186%;
+                    .tag, .ingrediends{
+                        font-size: 10px;
+                    }
+                    .info{
+                        font-size: 10px;
+                        margin: 0;
+                        span{
+                            background-size: 10px 1px;
+                        }
+                    }
+                    form{input{
+                        font-size: 12px;
+                        }}
+                    button{
+                        font-size: 12px;
+                        margin: 0;
+                        padding: 3%;
+                        width: 100%;
+                    }
+                }
+                img{
+                    width: 120px;
+                    height: 217px;
+                }
+            }
+}
